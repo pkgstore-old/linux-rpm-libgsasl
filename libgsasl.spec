@@ -83,10 +83,10 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
-* Fri Mar 13 2020 Package Store <pkgstore@pm.me> - 1.8.1-100
+* Fri Mar 13 2020 Package Store <kitsune.solar@gmail.com> - 1.8.1-100
 - NEW: v1.8.1.
 
-* Wed Oct 16 2019 Package Store <pkgstore@pm.me> - 1.8.0-100
+* Wed Oct 16 2019 Package Store <kitsune.solar@gmail.com> - 1.8.0-100
 - UPD: MARKETPLACE.
 
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-16
