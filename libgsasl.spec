@@ -1,4 +1,4 @@
-%global release_prefix          101
+%global release_prefix          102
 
 Name:                           libgsasl
 Version:                        1.10.0
@@ -6,6 +6,8 @@ Release:                        %{release_prefix}%{?dist}
 Summary:                        GNU SASL library
 License:                        LGPLv2+
 URL:                            https://www.gnu.org/software/gsasl/
+Vendor:                         Package Store <https://pkgstore.github.io>
+Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
 Source0:                        https://ftp.gnu.org/gnu/gsasl/%{name}-%{version}.tar.gz
 Source1:                        https://ftp.gnu.org/gnu/gsasl/%{name}-%{version}.tar.gz.sig
@@ -44,9 +46,11 @@ developing applications that use %{name}.
 %prep
 %autosetup
 
+
 %build
 %configure --disable-static --disable-rpath --with-gssapi-impl=mit
 %{make_build}
+
 
 %install
 %{make_install}
@@ -70,6 +74,9 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 
 %changelog
+* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-102
+- UPD: Add "Vendor" & "Packager" fields.
+
 * Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-101
 - UPD: New build for latest changes.
 
