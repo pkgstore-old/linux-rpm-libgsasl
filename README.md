@@ -6,7 +6,27 @@ GNU SASL consists of a C library (libgsasl), a command-line application (gsasl),
 
 The library is portable because it does not do network communication by itself, but rather leaves it up to the calling application. The library is flexible with regards to the authorization infrastructure used, as it utilizes callbacks into the application to decide whether an user is authorized or not. 
 
-## How it works
+## Install
+
+### Fedora COPR
+
+```
+$ dnf copr enable pkgstore/libgsasl
+```
+
+### Open Build Service (OBS)
+
+```
+# Work in Progress
+```
+
+## Update
+
+```
+$ dnf upgrade -y libgsasl
+```
+
+## How to Build
 
 1. Get source from [src.fedoraproject.org](https://src.fedoraproject.org/rpms/libgsasl).
 2. Write last commit SHA from [src.fedoraproject.org](https://src.fedoraproject.org/rpms/libgsasl) to [CHANGELOG](CHANGELOG).
