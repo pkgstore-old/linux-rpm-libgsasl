@@ -12,6 +12,7 @@ The library is portable because it does not do network communication by itself, 
 
 ```
 $ dnf copr enable pkgstore/libgsasl
+$ dnf install -y libgsasl
 ```
 
 ### Open Build Service (OBS)
