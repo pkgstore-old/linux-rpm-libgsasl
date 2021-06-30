@@ -55,7 +55,7 @@ developing applications that use %{name}.
 %install
 %{make_install}
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
-%find_lang %{name}
+%{find_lang} %{name}
 
 %ldconfig_scriptlets
 
