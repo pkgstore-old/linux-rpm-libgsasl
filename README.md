@@ -11,7 +11,7 @@ The library is portable because it does not do network communication by itself, 
 ### Fedora COPR
 
 ```
-$ dnf copr enable pkgstore/libgsasl
+$ dnf copr enable pkgstore/lib
 $ dnf install -y libgsasl
 ```
 
@@ -25,6 +25,13 @@ $ dnf install -y libgsasl
 
 ```
 $ dnf upgrade -y libgsasl
+```
+
+## Remove
+
+```
+$ dnf erase -y libgsasl
+$ dnf copr remove pkgstore/lib
 ```
 
 ## How to Build
