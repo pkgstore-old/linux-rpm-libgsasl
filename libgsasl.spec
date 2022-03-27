@@ -1,4 +1,4 @@
-%global release_prefix          102
+%global release_prefix          103
 
 Name:                           libgsasl
 Version:                        1.10.0
@@ -74,6 +74,15 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 
 %changelog
+* Mon Mar 28 2022 Package Store <mail@z17.dev> - 1:1.10.0-103
+- UPD: Rebuild by Package Store.
+
+* Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 1.10.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
+
+* Thu Jul 22 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.10.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
 * Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-102
 - UPD: Add "Vendor" & "Packager" fields.
 
@@ -98,6 +107,12 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 * Wed Oct 16 2019 Package Store <kitsune.solar@gmail.com> - 1.8.0-100
 - UPD: MARKETPLACE.
+
+* Fri Mar  6 2020 Peter Lemenkov <lemenkov@gmail.com> - 1.8.1-1
+- Ver. 1.8.1
+
+* Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
