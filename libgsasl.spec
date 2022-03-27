@@ -93,7 +93,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 - UPD: Move to GitHub.
 - UPD: License.
 
-* Sat Apr  3 2021 Peter Lemenkov <lemenkov@gmail.com> - 1.10.0-1
+* Sat Apr 03 2021 Peter Lemenkov <lemenkov@gmail.com> - 1.10.0-1
 - Ver. 1.10.0
 
 * Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.1-3
@@ -105,14 +105,14 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 * Fri Mar 13 2020 Package Store <kitsune.solar@gmail.com> - 1.8.1-100
 - NEW: v1.8.1.
 
-* Wed Oct 16 2019 Package Store <kitsune.solar@gmail.com> - 1.8.0-100
-- UPD: MARKETPLACE.
-
-* Fri Mar  6 2020 Peter Lemenkov <lemenkov@gmail.com> - 1.8.1-1
+* Fri Mar 06 2020 Peter Lemenkov <lemenkov@gmail.com> - 1.8.1-1
 - Ver. 1.8.1
 
 * Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-17
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
+* Wed Oct 16 2019 Package Store <kitsune.solar@gmail.com> - 1.8.0-100
+- UPD: MARKETPLACE.
 
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
