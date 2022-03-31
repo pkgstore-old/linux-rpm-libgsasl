@@ -1,4 +1,4 @@
-%global release_prefix          103
+%global release_prefix          1000
 
 Name:                           libgsasl
 Version:                        1.10.0
@@ -6,11 +6,8 @@ Release:                        %{release_prefix}%{?dist}
 Summary:                        GNU SASL library
 License:                        LGPLv2+
 URL:                            https://www.gnu.org/software/gsasl/
-Vendor:                         Package Store <https://pkgstore.github.io>
-Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
-Source0:                        https://ftp.gnu.org/gnu/gsasl/%{name}-%{version}.tar.gz
-Source1:                        https://ftp.gnu.org/gnu/gsasl/%{name}-%{version}.tar.gz.sig
+Source0:                        %{name}-%{version}.tar.xz
 
 BuildRequires:                  gcc
 BuildRequires:                  krb5-devel
@@ -57,7 +54,7 @@ developing applications that use %{name}.
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{find_lang} %{name}
 
-%ldconfig_scriptlets
+%{ldconfig_scriptlets}
 
 
 %files -f %{name}.lang
@@ -74,7 +71,11 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 
 %changelog
-* Mon Mar 28 2022 Package Store <mail@z17.dev> - 1:1.10.0-103
+* Thu Mar 31 2022 Package Store <pkgstore@mail.ru> - 1:1.10.0-1000
+- UPD: Rebuild by Package Store.
+- UPD: File "libgsasl.spec".
+
+* Mon Mar 28 2022 Package Store <pkgstore@mail.ru> - 1:1.10.0-103
 - UPD: Rebuild by Package Store.
 
 * Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 1.10.0-3
@@ -83,17 +84,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 * Thu Jul 22 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.10.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
 
-* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-102
-- UPD: Add "Vendor" & "Packager" fields.
-
-* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-101
-- UPD: New build for latest changes.
-
-* Thu Jun 17 2021 Package Store <kitsune.solar@gmail.com> - 1:1.10.0-100
-- UPD: Move to GitHub.
-- UPD: License.
-
-* Sat Apr 03 2021 Peter Lemenkov <lemenkov@gmail.com> - 1.10.0-1
+* Sat Apr  3 2021 Peter Lemenkov <lemenkov@gmail.com> - 1.10.0-1
 - Ver. 1.10.0
 
 * Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.1-3
@@ -102,17 +93,11 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
-* Fri Mar 13 2020 Package Store <kitsune.solar@gmail.com> - 1.8.1-100
-- NEW: v1.8.1.
-
-* Fri Mar 06 2020 Peter Lemenkov <lemenkov@gmail.com> - 1.8.1-1
+* Fri Mar  6 2020 Peter Lemenkov <lemenkov@gmail.com> - 1.8.1-1
 - Ver. 1.8.1
 
 * Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-17
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Wed Oct 16 2019 Package Store <kitsune.solar@gmail.com> - 1.8.0-100
-- UPD: MARKETPLACE.
 
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.8.0-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
