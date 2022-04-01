@@ -54,7 +54,7 @@ developing applications that use %{name}.
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{find_lang} %{name}
 
-%{ldconfig_scriptlets}
+%ldconfig_scriptlets
 
 
 %files -f %{name}.lang
